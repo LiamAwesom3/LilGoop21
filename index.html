@@ -4,9 +4,11 @@ body {
   background-image:url(websitedown.png);
 }
 
-  <audio src="/main/BaronyMines3.mp3" autoplay>
-<p>If you are reading this, it is because your browser does not support the audio element.     </p>
-<embed src="/music/good_enough.mp3" width="180" height="90" hidden="true" />
-</audio>
+    function playMusic(){
+    var music = new Audio('BaronyMines3.mp3');
+    music.play();
+    }
+  
+  <input type="button" value="sound" onclick="playMusic()" />
   
 </style>
